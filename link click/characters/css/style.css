@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    font-family: "Montserrat"
+}
+*{
+    margin-bottom: 0;
+    background-color: rgb(226, 226, 226);
+}
+
+header{
+    margin-top: 4%;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 10%; 
+}
+
+nav>a{
+    position: relative;
+    text-decoration: none; 
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 1.5em;
+    transition: all 1s;
+}
+
+nav>a:hover{ 
+    color: #A6445E;
+    font-size: 2em;
+}
+
+nav>a::before{ 
+    position: absolute;
+    width: 0%;
+    height: 1vh;
+    bottom: -1.5vh;
+    left: 0;
+    content: "";
+    background-color: #A6445E;
+    border-radius: 10px;
+    transition : all 1s;
+}
+
+nav>a:hover::before{
+    width: 100%;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+.box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+}
+
+h1{
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: .4vw;
+    color: #A6445E;
+    font-size: 5em;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+}
+
+.description{
+    text-align: center;
+    margin-top: 0;
+    font-size: 0.8em;
+}
+
+.showmore{
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    background-color: #A6445E;
+    padding: 5%;
+    border-radius: 40px;
+    margin-top: 6%;
+    transition: all .5s;
+}
+
+.showmore:hover{
+    background-color:#c85a77;
+    color: #4C5359;
+}
+
+.box-right{
+    width: 50vw;
+}
+
+.imageqiaoling{
+    width: 100%;
+}
+
+.arrows{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.previous{
+    text-decoration: none;
+    font-size: 1em;
+    color: #A6445E;
+}
+
+.next{
+    text-decoration: none;
+    font-size: 1em;
+    color: #A6445E;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1024px) {
+    .box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-left{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .box-right{
+        width: 100%;
+        margin-top: 30px;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .imageqiaoling{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/*-----------------------------------------------------------------------------------*/

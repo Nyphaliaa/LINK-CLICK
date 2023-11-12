@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+*{
+    font-family: "Montserrat"
+}
+*{
+    margin-bottom: 0;
+    background-color: rgb(226, 226, 226);
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+header{
+    margin-top: 4%;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+nav>a{
+    position: relative;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 1.5em;
+    transition: all 1s; 
+}
+
+nav>a:hover{ 
+    color: #586F8C;
+    font-size: 2em;
+}
+
+nav>a::before{ 
+    position: absolute;
+    width: 0%;
+    height: 1vh;
+    bottom: -1.5vh;
+    left: 0;
+    content: "";
+    background-color: #586F8C;
+    border-radius: 10px;
+    transition : all 1s;
+}
+
+nav>a:hover::before{
+    width: 100%;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+.titles{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+section>h2{
+    color: white;
+    font-size: 1.5em;
+    background-color: #586F8C;
+    padding: 2%;
+    border-radius: 60px;
+}
+
+main{
+    margin-left: 22.5%;
+    margin-top: 4vh;
+}
+
+.box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 6px solid #586F8C;
+    border-radius: 20px;
+    padding: 1%;
+    width: 50vw;
+    height: 80vh;
+}
+
+.poster{
+    display: flex;
+    justify-content: flex-end;
+    width: 45vw;
+    margin-left: 5%;
+}
+
+.image{
+    height: 70vh;
+}
+
+.details{
+    margin-left: 5%;
+    width: 45vw;
+}
+
+.gras{
+    color: #586F8C;
+    font-weight: bolder;
+}
+
+.pasgras{
+    color: black;
+    font-weight: lighter;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+.synopsis{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 60vw;
+    margin-left: 18%;
+    margin-top: 3%;
+    border: 6px solid #586F8C;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+.trailer{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.video{
+    border: 6px solid #586F8C;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1466px) {
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    body{
+        margin-left: 0;
+    }
+    main{
+        margin-left: 0;
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    .box{
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
+        height: 100vh;
+    }
+    .poster{
+        width: 70vw;
+        justify-content: center;
+        margin-left: 0;
+        margin-top: -70px;
+    }
+    .image{
+        height: 45vh;
+    }
+    .details{
+        margin-left: 0;
+        width: 70vw;
+        height: 35vh;
+    }
+    .details>p{
+        font-size: 1em;
+        text-align: center;
+    }
+    .boxsynopsis{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .synopsis{
+        width: 75vw;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .video{
+        margin-top: 50px;
+        width: 75vw;
+        padding: 2%;
+    }
+    section>h2{
+        font-size: 1.5em;
+        padding: 10%;
+        border-radius: 60px;
+    }
+}
+
+/*-----------------------------------------------------------------------------------*/
